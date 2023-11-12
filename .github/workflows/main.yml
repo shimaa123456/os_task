@@ -12,8 +12,11 @@ jobs:
 
 
     steps:
-      - name: 'Testing github action'
-        run: pwd
+      - name: 'printing folder content'
+        run: ls
 
-      - name: 'Testing printing'
-        run: echo shimaaessam
+
+      - uses: actions/checkout@v3
+
+      - name: 'After printing'
+        run: ls
