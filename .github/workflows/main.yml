@@ -12,11 +12,11 @@ jobs:
 
 
     steps:
-      - name: 'printing folder content'
-        run: ls
 
 
       - uses: actions/checkout@v3
 
-      - name: 'After printing'
-        run: ls
+      - name: 'login to dockerhub'
+        run: docker login --username shimaaessam --password dckr_pat_lErUe-qs79epyZ3IcrW59et8vZk
+
+
